@@ -13,20 +13,14 @@ class MC4WP_MailChimp {
 	 */
 	public function get_lists( $force_renewal = false, $force_fallback = false ) {
 
-		if( $force_renewal ) {
-			delete_transient( 'mc4wp_mailchimp_lists' );
-			delete_transient( 'mc4wp_mailchimp_lists_fallback' );
-		}
-
 		$cached_lists = get_transient( 'mc4wp_mailchimp_lists' );
 
 		// if force_fallback is true, get lists from older transient
-		if( $force_fallback ) {
+		if( true === $force_fallback ) {
 			$cached_lists = get_transient( 'mc4wp_mailchimp_lists_fallback' );
 		}
 
-		// got lists? if not, proceed with API call.
-		if( empty( $cached_lists ) ) {
+		if ( true === $force_renewal || false === $cached_lists || empty( $cached_lists ) ) {
 
 			// make api request for lists
 			$api = mc4wp_get_api();

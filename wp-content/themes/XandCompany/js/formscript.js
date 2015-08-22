@@ -43,8 +43,8 @@ $('#mc-embedded-subscribe-form').submit(function() {
         return false;
     }
 	
-});
-});  
+});}); 
+
 
 
  

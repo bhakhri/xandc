@@ -70,7 +70,7 @@ abstract class MC4WP_Request implements iMC4WP_Request {
 		$config = array();
 
 		foreach( $data as $key => $value ) {
-			if( stripos( $key, '_mc4wp_' ) === 0 ) {
+			if( strpos( $key, '_mc4wp_' ) === 0 ) {
 
 				// remove data from array
 				unset( $data[$key] );
@@ -227,7 +227,7 @@ abstract class MC4WP_Request implements iMC4WP_Request {
 			do_action( 'mc4wp_form_success', 0, $this->user_data['EMAIL'], $this->user_data );
 
 			// check if we want to redirect the visitor
-			if ( ! empty( $this->form->settings['redirect'] ) ) {
+			if ( '' !== $this->form->settings['redirect'] ) {
 				wp_redirect( $this->get_redirect_url() );
 				exit;
 			}
@@ -298,18 +298,17 @@ abstract class MC4WP_Request implements iMC4WP_Request {
 
 		// replace variables in message text
 		$message['text'] = MC4WP_Tools::replace_variables( $message['text'], array(), array_values( $this->get_lists() ) );
-
-		$html = '<div class="mc4wp-alert mc4wp-' . esc_attr( $message['type'] ) . '">' . $message['text'] . '</div>';
-
+			
+		echo "<script type='text/javascript'>alert('$this->mailchimp_error');</script>";
 		// show additional MailChimp API errors to administrators
-		if( ! $this->success && current_user_can( 'manage_options' ) ) {
+		//if( ! $this->success && current_user_can( 'manage_options' ) ) {
 
-			if( '' !== $this->mailchimp_error ) {
-				$html .= '<div class="mc4wp-alert mc4wp-error"><strong>Admin notice:</strong> '. $this->mailchimp_error . '</div>';
-			}
-		}
+			//if( '' !== $this->mailchimp_error ) {
+			//	$html .= '<div class="mc4wp-alert mc4wp-error"><strong>Admin notice:</strong> '. $this->mailchimp_error . '</div>';
+			//}
+		//}
 
-		return $html;
+		//return $html;
 	}
 
 }

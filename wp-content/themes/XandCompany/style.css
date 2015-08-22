@@ -69,6 +69,9 @@ body.custom-background {
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
 }
+.page-content > form > select {
+  padding: 5px 0 5px 2px;
+}
 .main-navigation {
   background-color: #000000;
   font-size: 0;
@@ -79,7 +82,7 @@ body.custom-background {
 	margin-top:0px
 }
 .f-nav {/* To fix main menu container */
-  left: 248.5px;
+  left: 169.5px;
   position: fixed;
   top: 0;
   width: 1080px;
@@ -592,5 +595,26 @@ transition: all 200ms linear 0s;
 }
 .repeater_loop1 select {
   padding: 5px;
+}
+#form2 .form-request {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: #d2d2d2 #c3c3c3 #9f9f9f;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  color: #646464;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 16px;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 800ms linear 0s;
+  width: auto;
+}
+#form2 .form-request:hover{
+background: #FF6600;
+  text-shadow: none;
+  transition: all 800ms linear 0s;
 }
 

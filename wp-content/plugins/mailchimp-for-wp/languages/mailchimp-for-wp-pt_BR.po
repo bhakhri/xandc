@@ -3,16 +3,15 @@
 # Translators:
 # Douglas de Araujo <douglas@ludicaeventos.com.br>, 2015
 # Leandro de Santi <leandro.santi@gmail.com>, 2014-2015
-# Lucas Vilaboim de Figueiredo <luvilaboim@gmail.com>, 2015
 # Ronne Clay Santos <roneclay@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MailChimp for WordPress\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/mailchimp-for-wp\n"
 "POT-Creation-Date: 2015-05-26 14:41:46+00:00\n"
-"PO-Revision-Date: 2015-07-29 03:35+0000\n"
-"Last-Translator: Lucas Vilaboim de Figueiredo <luvilaboim@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/ibericode/mailchimp-for-wordpress/language/pt_BR/)\n"
+"PO-Revision-Date: 2015-05-26 14:42+0000\n"
+"Last-Translator: Danny van Kooten <dannyvankooten@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/p/mailchimp-for-wordpress/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -129,7 +128,7 @@ msgstr "Inscrever"
 #: mailchimp-for-wordpress/includes/admin/class-admin.php:292
 #: mailchimp-for-wordpress-pro/includes/admin/class-admin.php:616
 msgid "Unsubscribe"
-msgstr "Cancelar inscrição"
+msgstr ""
 
 #: mailchimp-for-wordpress/includes/admin/class-admin.php:316
 #: mailchimp-for-wordpress-pro/includes/admin/class-admin.php:654
@@ -256,12 +255,12 @@ msgstr "Por favor, preencha os campos necessários."
 #: mailchimp-for-wordpress/includes/functions/general.php:50
 #: mailchimp-for-wordpress-pro/includes/config/default-options.php:40
 msgid "You were successfully unsubscribed."
-msgstr "Sua inscrição foi cancelada com sucesso."
+msgstr ""
 
 #: mailchimp-for-wordpress/includes/functions/general.php:51
 #: mailchimp-for-wordpress-pro/includes/config/default-options.php:41
 msgid "Given email address is not subscribed."
-msgstr "O e-mail fornecido não está inscrito."
+msgstr ""
 
 #: mailchimp-for-wordpress/includes/integrations/class-cf7.php:55
 #: mailchimp-for-wordpress/includes/views/checkbox-settings.php:52
@@ -746,7 +745,7 @@ msgstr ""
 #: mailchimp-for-wordpress/includes/views/form-settings.php:195
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-general-settings.php:140
 msgid "Successfully subscribed"
-msgstr "Inscrição realizada com sucesso"
+msgstr ""
 
 #: mailchimp-for-wordpress/includes/views/form-settings.php:198
 #: mailchimp-for-wordpress-pro/includes/views/metaboxes/optional-form-settings.php:156
@@ -877,7 +876,7 @@ msgstr ""
 #: mailchimp-for-wordpress/includes/views/form-settings.php:272
 #: mailchimp-for-wordpress-pro/includes/admin/class-admin.php:366
 msgid "Variables"
-msgstr "Variáveis"
+msgstr ""
 
 #: mailchimp-for-wordpress/includes/views/form-settings.php:274
 #: mailchimp-for-wordpress-pro/includes/views/parts/admin-text-variables.php:11
@@ -1056,7 +1055,7 @@ msgstr "Este plugin não é desenvolvido ou afiliada com MailChimp de qualquer f
 
 #: mailchimp-for-wordpress/includes/views/parts/admin-need-support.php:9
 msgid "Looking for help?"
-msgstr "Precisando de ajuda?"
+msgstr ""
 
 #: mailchimp-for-wordpress/includes/views/parts/admin-need-support.php:10
 msgid ""
@@ -1114,7 +1113,7 @@ msgstr ""
 
 #: mailchimp-for-wordpress/includes/views/parts/admin-upgrade-to-pro.php:18
 msgid "AJAX forms"
-msgstr "Formulários AJAX"
+msgstr ""
 
 #: mailchimp-for-wordpress/includes/views/parts/admin-upgrade-to-pro.php:19
 msgid "Forms do not require a full page reload."
@@ -1143,7 +1142,7 @@ msgstr "Atualizar Agora"
 
 #: mailchimp-for-wordpress/includes/views/parts/admin-upgrade-to-pro.php:32
 msgid "View Demo"
-msgstr "Ver demonstração"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/admin/class-admin.php:176
 msgid "Documentation"
@@ -1683,7 +1682,7 @@ msgstr ""
 #: mailchimp-for-wordpress-pro/includes/views/parts/admin-footer.php:11
 msgid ""
 "Please use the same email address as you used when purchasing the plugin."
-msgstr "Por favor, use o mesmo e-mail usado na compra do plugin."
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:11
 msgid "Use the fields below to create custom styling rules for your forms."
@@ -1722,18 +1721,18 @@ msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:66
 msgid "Form width"
-msgstr "Largura do formulário"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:66
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:118
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:160
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:202
 msgid "px or %"
-msgstr "px ou %"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:70
 msgid "Text alignment"
-msgstr "Alinhamento do texto"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:73
 msgid "Choose alignment"
@@ -1741,20 +1740,20 @@ msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:74
 msgid "Left"
-msgstr "Esquerda"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:75
 msgid "Center"
-msgstr "Centro"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:76
 msgid "Right"
-msgstr "Direita"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:81
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:210
 msgid "Background color"
-msgstr "Cor de fundo"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:83
 msgid "Padding"
@@ -1764,29 +1763,29 @@ msgstr ""
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:168
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:219
 msgid "Border color"
-msgstr "Cor da borda"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:91
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:170
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:215
 msgid "Border width"
-msgstr "Largura da borda"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:95
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:126
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:228
 msgid "Text color"
-msgstr "Cor do texto"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:97
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:128
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:230
 msgid "Text size"
-msgstr "Largura do texto"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:101
 msgid "Background image"
-msgstr "Imagem de fundo"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:114
 msgid "Label styles"
@@ -1798,7 +1797,7 @@ msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:132
 msgid "Text style"
-msgstr "Estilo do texto"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:135
 msgid "Choose text style.."
@@ -1806,19 +1805,19 @@ msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:136
 msgid "Normal"
-msgstr "Normal"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:137
 msgid "Bold"
-msgstr "Negrito"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:138
 msgid "Italic"
-msgstr "Itálico"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:139
 msgid "Bold & Italic"
-msgstr "Negrito & itálico"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:142
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:174
@@ -1841,16 +1840,16 @@ msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:160
 msgid "Field width"
-msgstr "Largura do campo"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:164
 msgid "Field height"
-msgstr "Altura do campo"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:182
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:224
 msgid "Border radius"
-msgstr "Border radius"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:186
 msgid "Focus outline"
@@ -1862,15 +1861,15 @@ msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:202
 msgid "Button width"
-msgstr "Largura do botão"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:206
 msgid "Button height"
-msgstr "Altura do botão"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:238
 msgid "Error and success messages"
-msgstr "Mensagens de sucesso e erro"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:242
 msgid "Success text color"
@@ -1882,7 +1881,7 @@ msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:252
 msgid "Advanced"
-msgstr "Avançado"
+msgstr ""
 
 #: mailchimp-for-wordpress-pro/includes/views/tabs/admin-forms-css-builder.php:256
 msgid "CSS Selector Prefix"

@@ -653,3 +653,5 @@ update_post_meta($_POST['post_ID'],'allsub',$_POST['parent_id']);
 //die;
 }
 add_action('save_post', 'add_new_posts');
+
+

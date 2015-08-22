@@ -23,33 +23,32 @@ get_header(); ?>
 			<div id="panel-1"class="panel-class">
 				<div class="container">
 					<div class="content-container">
-						<?php if ( have_posts() ) : ?>
-						<?php if(is_tax( 'study-area')){ ?>
-					
-<?php 
-// vars
-$queried_object = get_queried_object(); 
-$taxonomy = $queried_object->taxonomy;
-$term_id = $queried_object->term_id;  
-
-// load thumbnail for this taxonomy term (term object)
-$thumbnail = get_field('category_content', $queried_object);
-?>						<div class="cat-name">
-<h2><?php echo $current_category = single_cat_title("", false); ?></h2>
-</div>
-<div class="page-content">
-<?php echo $thumbnail;?>
-</div>
-						<div class="page-title">
-							<h2>Schools with <?php echo $current_category = single_cat_title("", false); ?> degrees<?php //the_archive_description();?></h2>
-						</div><?php } else { ?>
+<?php if(is_tax( 'study-area')){ ?>
+					<?php // vars
+						$queried_object = get_queried_object(); 
+						$taxonomy = $queried_object->taxonomy;
+						$term_id = $queried_object->term_id;  
+						$catcontent = get_field('category_content', $queried_object);?>							
 						<div class="cat-name">
 							<h2><?php echo $current_category = single_cat_title("", false); ?></h2>
 						</div>
-						<?php } ?>
-						<?php
-			// Start the Loop.
-						while ( have_posts() ) : the_post();?>
+						<div class="page-content">
+							<?php echo $catcontent;?>
+						</div>
+						<div class="page-title">
+							<h2>Schools with <?php echo $current_category = single_cat_title("", false); ?> degrees<?php //the_archive_description();?></h2>
+						</div>
+							<?php // Start the Loop.
+								$args = array('post_type' => 'schools','tax_query' => array(
+								array(
+										'taxonomy' => 'study-area',
+										'field' => 'id',
+										'terms' => $term_id
+									 )
+								));
+						$query = new WP_Query( $args ); ?>
+				<?php if ( have_posts() ) : ?>
+						<?php while ( $query->have_posts() ) : $query->the_post();?>
 							<div class="post-container">
 								<div class="post-image-container">
 									<a href="<?php the_permalink();?>"><?php the_post_thumbnail('school-thumb'); ?></a>
@@ -61,13 +60,31 @@ $thumbnail = get_field('category_content', $queried_object);
 									<a href="<?php the_permalink();?>"><span>Read More</span></a>
 								</div>
 							</div>
-							
-			<?php endwhile;endif;?>
+				<?php endwhile;endif;  wp_reset_query();?>
+<?php } else { ?>
+						<div class="cat-name">
+							<h2><?php echo $current_category = single_cat_title("", false); ?></h2>
+						</div>
+					<?php if ( have_posts() ) : ?>
+						<?php while ( have_posts() ) : the_post();?>
+							<div class="post-container">
+								<div class="post-image-container">
+									<a href="<?php the_permalink();?>"><?php the_post_thumbnail('school-thumb'); ?></a>
+								</div>
+								 
+								<div class="post-content-container">
+									<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+								<?php echo wp_trim_words( get_the_content(), 60, '...' );?>
+									<a href="<?php the_permalink();?>"><span>Read More</span></a>
+								</div>
+							</div>
+					<?php endwhile;endif;  wp_reset_query();?>
+<?php } ?>
 					</div>
-					<div class="rightside">
-						<?php dynamic_sidebar('degrees-link');?>
-						<?php dynamic_sidebar('schools-link');?>
-					</div>
+						<div class="rightside">
+							<?php dynamic_sidebar('degrees-link');?>
+							<?php dynamic_sidebar('schools-link');?>
+						</div>
 				</div>
 			</div>
 		</div>

@@ -266,12 +266,6 @@ get_header(); ?>
 									<form  id="mc-embedded-subscribe-form" action="" method="post">
 										<?php echo do_shortcode('[mc4wp_form]');?>
 									</form>
-									
-						
-									
-									
-									
-									
 								</div>
 							</div>
 					</div>

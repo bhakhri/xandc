@@ -21,15 +21,21 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/formscript.js"></script>
-
-
-	
-	
-	
-	
-	<?php wp_head(); ?>
+<script>
+$(document).ready(function(){
+	$("#send-request").click(function(){
+    if ($.trim($("#selectdegree").val()) === "") {
+		$("#selectdegree").addClass('errornotice');
+		$('#selectdegree').focus(function(){
+   return $("#selectdegree").removeClass('errornotice');
+});
+        return false;
+    }
+}); 
+});
+</script>
+<?php wp_head(); ?>
 </head>
-
 <body class="custom-background">
 <div id="page-wrapper">
 	<header id="masthead" class="site-header" role="banner">

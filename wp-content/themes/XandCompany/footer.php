@@ -22,7 +22,6 @@
 	<a id="scroll-to-top" class="displayed" title="Back To Top" href="#top">
 <span class="vantage-icon-arrow-up"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow-up-01.png"></span>
 </a>
-</body>
-</html>
+<?php wp_footer();?>
 </body>
 </html>
